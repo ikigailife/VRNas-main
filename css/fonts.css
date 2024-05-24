@@ -1,0 +1,20 @@
+@font-face {
+  font-family: CPB;
+  src: url(../fonts/ChakraPetch-Bold.ttf);
+}
+@font-face {
+  font-family: CPL;
+  src: url(../fonts/ChakraPetch-Light.ttf);
+}
+@font-face {
+  font-family: CPM;
+  src: url(../fonts/ChakraPetch-Medium.ttf);
+}
+@font-face {
+  font-family: CPR;
+  src: url(../fonts/ChakraPetch-Regular.ttf);
+}
+@font-face {
+  font-family: CPSB;
+  src: url(../fonts/ChakraPetch-SemiBold.ttf);
+}

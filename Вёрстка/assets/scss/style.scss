@@ -1,0 +1,923 @@
+//ПОДКЛЮЧЕНИЕ ШРИФТОВ
+@import 'fonts.css';
+
+//ОБНУЛЕНИЕ СТИЛЕЙ
+*{
+    margin: 0;
+    padding: 0;box-sizing: border-box;
+}
+
+//ОБЩИЙ КОНТЕЙНЕР
+body{
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 1440px;
+    font-size: 100%;
+    overflow-x: hidden;
+    background-color: #18181b;
+}
+// начало Главного контейнера
+.container{
+
+// начало Header
+.header{
+    width: 1440px;
+    height: 723px;
+    background-image: url(/Вёрстка/assets/img/Group-Banner.png);
+    background-repeat: no-repeat;
+    padding: 31px 120px 0 120px;
+    &__logo{
+        width: 1200px;
+        height: 52px;
+        display: flex;
+        img:nth-child(1){
+            width: 101px;
+            height: 30px;
+            align-self: center;
+        }
+        nav{
+            width: 518px;
+            height: 28px;
+            display: flex;
+            justify-content: space-between;
+            align-self: center;
+            margin: 0 214px 0 241px;
+            a{
+                text-decoration: none;
+                align-self: center;
+                color: white;
+                font-weight: 300;
+                font-family: CPL;
+                font-size: 16px;
+            }
+            a:nth-of-type(1){
+                font-family: CPM;
+                font-weight: 500;
+            }
+            div{
+                align-self: center;
+            }
+        }
+        button{
+            width: 126px;
+            height: 52px;
+            border: 2px solid #0CBAF1;
+            background-color: transparent;
+            color: white;
+            font-family: CPL;
+            font-weight: 300;
+            font-size: 16px;
+        }
+    }
+    &__text{
+        width: 540px;
+        height: 316px;
+        margin-top: 87px;
+        p:nth-of-type(1){
+            color: white;
+            font-family: CPSB;
+            font-weight: 600;
+            font-size: 64px;
+            line-height: 83px;
+        }
+        p:nth-of-type(2){
+            color: white;
+            font-family: CPL;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 28px;
+            margin-top: 12px;
+        }
+        button{
+            width: 206px;
+            height: 50px;
+            margin-top: 32px;
+            border: none;
+            background-color: #E95CE9;
+            color: white;
+            font-family: CPB;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 14px;
+            letter-spacing: 1.5px;
+        }
+    }
+    &__Happy{
+        width: 548px;
+        height: 128px;
+        margin-top: 42px;
+        display: flex;
+        justify-content: space-between;
+        img:nth-child(1){
+            width: 277.34px;
+            height: 50.45px;
+            align-self: center;
+        }
+    }
+}
+// конец Header
+
+// Почему вы выбрали именно нас
+.Why_Choose_us{
+    width: 1200px;
+    height: 357px;
+    background-color: #252532;
+    margin: 0 120px 0;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    &__cards{
+        width: 1075px;
+        height: 262px;
+        display: flex;
+        justify-content: space-between;
+        margin: 42px 64px 53px;
+        h1,p{
+            font-weight: 400;
+        }
+        h1{
+            margin-top: 42px;
+            font-family: CPR;
+            font-size: 20px;
+            line-height: 26px;
+            color: white;
+        }
+        p{
+            font-family: CPM;
+            font-size: 14px;
+            line-height: 28px;
+            color: #B0B0B2;
+            margin-top: 12px;
+        }
+    }
+}
+// Конец Почему вы выбрали именно нас
+
+// О НАС
+.about-us{
+    width: 1238px;
+    height: 645px;
+    margin: 120px 136px 0 66px;
+    display: flex;
+    justify-content: space-between;
+    img{
+        width: 640px;
+        height: 622px;
+    }
+    &__text{
+        width: 562px;
+        height:549px;
+        margin-top: 81px;
+        h1{
+            font-family: CPM;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 20.8px;
+            letter-spacing: 0.14em; 
+            color: #0CBAF1;
+        }
+        P:nth-of-type(1), p:nth-of-type(2){
+            font-family: CPR;
+            margin-top: 12px;
+        }
+        p:nth-of-type(1){
+            font-family: CPR;
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 58px;
+            letter-spacing: -0.005em;
+            color: white;
+            margin-top: 12px;
+        }
+        p:nth-of-type(2){
+            font-family: CPR;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 28px;
+            color: #D1D1D1;
+            margin-top: 12px;
+        }
+        &__title{
+            width: 218px;
+            height: 112px;
+            margin-top: 24px;
+            div{
+                display: flex;
+                margin-top: 14px;
+                img{
+                    width: 16px;
+                    height: 16px;
+                    align-self: center;
+                }
+                h2{
+                    font-family: CPL;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 28px;
+                    color: white;
+                    margin-left: 12px;
+                }
+            }
+        }
+        button{
+            width: 168px;
+            height: 50px;
+            margin-top: 32px;
+            font-family: CPR;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 14px;
+            letter-spacing: 1.5px;
+            border: none;
+            color: white;
+            background-color: #E95CE9;
+        }
+    }
+}
+// конец О НАС
+
+// начало Our-services
+.our-service{
+    width: 1200px;
+    height: 908px;
+    margin: 150px 120px 0;
+    &__text{
+        width: 1158px;
+        height: 115px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 46px;
+        div{
+            width: 250px;
+            height: 91px;
+            h1:nth-of-type(1){
+                font-family: CPR;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 20.8px;
+                letter-spacing: 0.14em;
+                color: #E95CE9;
+            }
+            p:nth-of-type(1){
+                font-family: CPR;
+                font-size: 48px;
+                font-weight: 600;
+                line-height: 58px;
+                letter-spacing: -0.005em;
+                color: white;
+                margin-top: 12px;
+            }
+        }
+        P{
+            font-family: CPR;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 28px;
+            color: #D1D1D1;
+        }
+    }
+    &__cards{
+        display: flex;
+        &__cardOne, &__cardTwo, &__cardThree{
+            div{
+                width: 379px;
+                height: 291px;
+                background-color: #25253299;
+                border: 1px solid #FFFFFF4D;
+                img{
+                    margin: 38px 0 0 32px;
+                }
+                p{
+                    font-weight: 400;
+                    font-family: CPR;
+                }
+                p:nth-of-type(1){
+                    font-size: 20px;
+                    line-height: 26px;
+                    margin: 60px 0 0 32px;
+                    color: white;
+                }
+                p:nth-of-type(2){
+                    font-size: 14px;
+                    line-height: 28px;
+                    margin: 12px 0 0 32px;
+                    color: #B0B0B2;
+                }
+            }
+            div:nth-of-type(2){
+                margin-top: 32px;
+            }
+        }
+        &__cardTwo{
+            margin: 57px 0 0 32px;
+            div:nth-of-type(2){
+                border: 1px solid #0CBAF1;
+            }
+        }
+        &__cardThree{
+            margin: 135px 0 0 26px;
+        }
+    }
+}
+// конец Our-services
+
+// начало Why-Choose-us
+.why-Choose-us{
+    width: 1301.06px;
+    height: 699px;
+    margin: 150px 0 0 120px;
+    display: flex;
+    &__text{
+        width: 548px;
+        height: 515px;
+        p{
+            font-family: CPR;
+        }
+        h1{
+            font-family: CPR;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 20.8px;
+            letter-spacing: 0.14em;
+            color: #0CBAF1;
+        }
+        p:nth-of-type(1){
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 58px;
+            letter-spacing: -0.005em;
+            color: white;
+            margin-top: 12px;
+        }
+        p:nth-of-type(2){
+            font-family: CPR;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 28px;
+            color: #D1D1D1;
+            margin-top: 12px;
+        }
+        div:nth-of-type(1){
+            margin-top: 32px;
+        }
+        div{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 48px;
+            h2{
+                font-family: CPM;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 26px;
+                color: white;
+            }
+            img{
+                width: 12px;
+                height: 12px;
+                align-self: center;
+            }
+        }
+        hr{
+            border: 1px solid #FFFFFF59;
+        }
+    }
+}
+// конец Why-Choose-us
+
+// начало How-To-Get_started
+.how-to-get-started{
+    width: 1200px;
+    height: 817px;
+    margin: 150px 0 0 120px;
+    h1,p{
+        font-family: CPR;
+        text-align: center;
+    }
+    h1:nth-of-type(1){
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20.8px;
+        letter-spacing: 0.14em;
+        color: #E95CE9;
+    }
+    p:nth-of-type(1){
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 58px;
+        letter-spacing: -0.005em;
+        color: white;
+        margin-top: 12px;
+    }
+    img{
+        width: 1200px;
+        height: 522px;
+        margin-top: 48px;
+    }
+    button{
+        width: 182px;
+        height: 50px;
+        border: none;
+        font-family: CPR;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 14px;
+        letter-spacing: 1.5px;
+        color: white;
+        background-color: #E95CE9;
+        margin: 48px 0 0 509px;
+    }
+}
+// конец How-To-Get_started
+
+// начало Testimonial
+.TESTIMONIAL{
+    img{
+        margin: 100px 97px 0;
+    }
+}
+// конец Testimonial
+
+// начало Our-Pricing
+.our-pricing{
+    width: 1253px;
+    height: 838px;
+    margin: 100px 0 0 120px;
+    h1,p{
+        font-family: CPR;
+    }
+    h1:nth-of-type(1){
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20.8px;
+        letter-spacing: 0.14em;
+        color: #0CBAF1;
+    }
+    p:nth-of-type(1){
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 58px;
+        letter-spacing: -0.005em;
+        color: white;
+        margin-top: 12px;
+    }
+    p:nth-of-type(2){
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 28px;
+        color: #D1D1D1;
+        margin-top: 16px;
+    }
+    &__content{
+        position: absolute;
+        width: 1200px;
+        height: 587px;
+        border: 1px solid #FFFFFF4D;
+        background-color: #252532CF;
+        margin-top: 40px;
+        display: flex;
+        padding-top: 23px;
+        &__bg{
+            width: 708px;
+            height: 505px;
+            margin-left: 42px;
+            &__text{
+                width: 640px;
+                height: 147px;
+                margin-top: 32px;
+                display: flex;
+                img{
+                    width: 42px;
+                    height: 42px;
+                }
+                div{
+                    margin-left: 16px;
+                    p:nth-of-type(1){
+                        font-family: CPR;
+                        font-size: 18px;
+                        font-weight: 400;
+                        line-height: 23.4px;
+                        color: white;
+                    }
+                    p:nth-of-type(2){
+                        font-family: CPR;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 28px;
+                        color: #B0B0B2;
+                        margin-top: 12px;
+                    }
+                }
+            }
+        }
+        hr{
+            height: 447px;
+            position: absolute;
+            margin: 18px 0 0 800px;
+            border: 1px solid #FFFFFF4D;
+        }
+        &__start{
+            position: relative;
+            margin: 400px 170px 0 0;
+            width: 321px;
+            height: 222px;
+            background-color: #252532;
+            border: 1px solid #E95CE9;
+            p{
+                text-align: center;
+            }
+            p:nth-of-type(1){
+                font-family: CPR;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 20px;
+                color: #D1D1D1;
+                margin-top: 20px;
+            }
+            p:nth-of-type(2){
+                font-family: CPR;
+                font-size: 60px;
+                font-weight: 600;
+                line-height: 66px;
+                color: white;
+            }
+            button{
+                width: 182px;
+                height: 50px;
+                background-color: #0CBAF1;
+                border: none;
+                font-family: CPR;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 14px;
+                letter-spacing: 1.5px;
+                color: white;
+                margin: 22px 0 0 60px;
+            }
+            p:nth-of-type(3){
+                font-family: CPR;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 20px;
+                color: #B0B0B2;
+                margin-top: 4px;
+            }
+        }
+    }
+}
+// конец Our-Pricing 
+
+// начало Our-Trusted-Parthes
+.Our-Trusted-Partners{
+    width: 1055px;
+    height: 890px;
+    margin: 150px 0 0 193px;
+    h1,p{
+        font-family: CPR;
+        text-align: center;
+    }
+    h1:nth-of-type(1){
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20.8px;
+        letter-spacing: 0.14em;
+        color: #0CBAF1;
+    }
+    p:nth-of-type(1){
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 58px;
+        letter-spacing: -0.005em;
+        color: white;
+        margin-top: 12px;
+    }
+    img{
+        margin-top: 58px;
+    }
+}
+// конец Our-Trusted-Parthes
+
+// начало Our-Articles
+.our-articles{
+    width: 1426px;
+    height: 768px;
+    margin: 150px 0 0 14px;
+    background-image: url(/Вёрстка/assets/img/Group_OUR-ARTICLES.png);
+    background-repeat: no-repeat;
+    h1,h2,p{
+        font-family: CPR;
+        margin-left: 120px;
+        color: white;
+    }
+    h1{
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20.8px;
+        letter-spacing: 0.14em;
+        color: #E95CE9;
+    }
+    h2{
+        margin-top: 104px;
+    }
+    &__btn{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 12px;
+        &__p{
+
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 58px;
+            letter-spacing: -0.005em;
+            color: white;
+
+        }
+        button{
+            width: 140px;
+            height: 50px;
+            border: 1px solid #E95CE9;
+            background-color: #FFFFFF0F;
+            font-family: CPR;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 14px;
+            letter-spacing: 1.5px;
+            color: white;
+            margin-right: 120px;
+        }
+    }
+    h2,p:nth-of-type(2){
+        font-family: CPR;
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 36.4px;
+        letter-spacing: -0.005em;
+        color: white;
+        margin-top: 104px;
+        position: absolute;
+    }
+    &__content{
+        display: flex;
+        &__popular{
+            position: absolute;
+            width: 636px;
+            height: 425px;
+            background-image: url(/Вёрстка/assets/img/7.png);
+            margin: 172px 0 0 120px;
+            padding: 280px 0 0 24px;
+            p{
+                font-family: CPR;
+                color: white;
+                margin: 0;
+            }
+            &__p{
+                width: 86px;
+                height: 24px;
+                font-family: CPR;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 20px;
+                text-align: center;
+                align-self: center;
+                border-radius: 16px;
+                background-color: #FFFFFF4D;
+            }
+            &__text{
+                display: flex;
+                p{
+                    font-size: 32px;
+                    font-weight: 600;
+                    line-height: 41.6px;
+                    letter-spacing: -0.005em;
+                    color: white;
+                    margin-top: 12px;
+                }
+                button{
+                    width: 50px;
+                    height: 50px;
+                    margin: 23px 0 0 29px;
+                    border: 1px solid #0CBAF1;
+                    background-color: transparent;
+                }
+            }
+        }
+        &__recent{
+            position: absolute;
+            width: 730px;
+            height: 605px;
+            background-color: #252532;
+            padding: 32px 0 0 97px;
+            margin: 72px 0 0 710px;
+            p:nth-of-type(1){
+                font-family: CPR;
+                font-size: 28px;
+                font-weight: 600;
+                line-height: 36.4px;
+                letter-spacing: -0.005em;
+                color: white;
+            }
+            &__card{
+                width: 513px;
+                height: 91px;
+                display: flex;
+                margin: 32px 0 32px 0;
+                img{
+                    width: 142px;
+                    height: 91px;
+                }
+                &__text{
+                    width: 297px;
+                    height: 78px;
+                    margin: 7px 0 0 21px;
+                    p{
+                        font-family: CPR;
+                        color: white;
+                    }
+                    p:nth-of-type(1){
+                        width: 135px;
+                        height: 24px;
+                        font-size: 14px;
+                        font-weight: 500;
+                        line-height: 20px;
+                        text-align: center;
+                        background-color: #FFFFFF4D;
+                        border-radius: 16px;
+                        margin: 0;
+                    }
+                    p:nth-of-type(2){
+                        font-size: 18px;
+                        font-weight: 400;
+                        line-height: 23.4px;
+                        margin: 8px 0 0 0;
+                    }
+                }
+                button{
+                    width: 40px;
+                    height: 40px;
+                    border: 1px solid #0CBAF1;
+                    background-color: transparent;
+                    margin-top: 26px;
+                    img{
+                        width: 13px;
+                        height: 13px;
+                    }
+                }
+            }
+            hr{
+                border: 1px solid #FFFFFF26;
+            }
+        }
+    }
+    &__img{
+        width: 80px;
+        height: 3px;
+        margin: 641px 0 0 398px;
+    }
+}
+// конец Our-Articles
+
+// начало BG
+.BG{
+    width: 1200px;
+    height: 185px;
+    background-image: url(/Вёрстка/assets/img/BG.png);
+    margin: 150px 0 0 120px;
+    padding: 38px 0 0 74px;
+    &__content{
+        display: flex;
+        h1,p{
+            font-family: CPR;
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 58px;
+            letter-spacing: -0.005em;
+            color: white;
+        }
+        &__text{
+            width: 365px;
+            height: 56px;
+            background-color: #FFFFFF12;
+            display: flex;
+            margin: 27px 0 0 167px;
+            img{
+                width: 24px;
+                height: 24px;
+                align-self: center;
+                margin-left: 14px;
+            }
+            p{
+                font-family: CPR;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 28px;
+                color: white;
+                align-self: center;
+                margin-left: 8px;
+            }
+            button{
+                width: 50px;
+                height: 50px;
+                background-color: #FFFFFF36;
+                margin-left: 84px;
+                border: none;
+                img{
+                    width: 16px;
+                    height: 16px;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+// конец BG
+
+// начало Footer
+.footer{
+    width: 1440px;
+    height: 508px;
+    margin-top: 64px;
+    background-image: url(/Вёрстка/assets/img/footer-bg.png);
+    background-repeat: no-repeat;
+    padding: 118px 118px 0 121px;
+    &__content{
+        width: 1193px;
+        height: 250px;
+        display: flex;
+        &__logo{
+            width: 244px;
+            height: 215px;
+            &__icon{
+                width: 244px;
+                height: 46px;
+                display: flex;
+                justify-content: space-between;
+                margin-top: 139px;
+            }
+        }
+        &__textOne, &__textTwo, &__textThree{
+            p{
+                color: white;
+                font-family: CPR;
+                margin-top: 16px;
+            }
+            p:nth-of-type(1){
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 28px;
+                margin: 0;
+            }
+        }
+        &__textOne, &__textTwo{
+            width: 85px;
+            height: 248px;
+            margin-left: 177px;
+            p{
+                font-family: CPL;
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 28px;
+            }
+        }
+        &__textTwo{
+            width: 132px;
+            height: 248px;
+            margin-left: 149px;
+        }
+        &__textThree{
+            width: 319px;
+            height: 116px;
+            margin-left: 86px;
+            div{
+                display: flex;
+                margin-top: 16px;
+                img{
+                    width: 20px;
+                    height: 20px;
+                    align-self: center;
+                    margin-right: 8px;
+                }
+                p{
+                    font-family: CPL;
+                    font-size: 16px;
+                    line-height: 28px;
+                }
+            }
+        }
+    }
+    hr{
+        margin-top: 33px;
+        border: 1px solid #E95CE9;
+    }
+    &__p{
+        font-family: CPL;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 28px;
+        color: white;
+        text-align: center;
+        margin-top: 32px;
+    }
+}
+// конец Footer
+
+}
+// конец Главного контейнера
